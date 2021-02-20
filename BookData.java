@@ -1,4 +1,4 @@
-package minerlore;
+package com.proceduraldialectics.minerlore;
 
 public class BookData {
 	public String author;

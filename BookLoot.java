@@ -1,90 +1,118 @@
-package minerlore;
+package com.proceduraldialectics.minerlore;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import net.minecraft.init.Items;
-import net.minecraft.item.ItemStack;
-import net.minecraft.nbt.NBTTagCompound;
-import net.minecraft.nbt.NBTTagList;
-import net.minecraft.nbt.NBTTagString;
-import net.minecraft.util.ResourceLocation;
-import net.minecraft.world.World;
-import net.minecraft.world.storage.loot.LootEntry;
-import net.minecraft.world.storage.loot.LootEntryItem;
-import net.minecraft.world.storage.loot.LootPool;
-import net.minecraft.world.storage.loot.LootTableList;
-import net.minecraft.world.storage.loot.RandomValueRange;
-import net.minecraft.world.storage.loot.conditions.LootCondition;
-import net.minecraft.world.storage.loot.functions.LootFunction;
-import net.minecraft.world.storage.loot.functions.SetNBT;
+import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.LootTableLoadEvent;
-import net.minecraftforge.event.entity.player.PlayerInteractEvent;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
-@Mod(modid = BookLoot.MODID, name = BookLoot.NAME, version = BookLoot.VERSION, dependencies = "")
-@Mod.EventBusSubscriber 
-public class BookLoot {
-    public static final String MODID = "minerlore";
-    public static final String NAME = "Miner Lore";
-    public static final String VERSION = "1.0";
-       
-    public static LootEntry entry = new LootEntryItem(
-			Items.WRITTEN_BOOK, 1, 0, new LootFunction[0], new LootCondition[0], "minerlore:lootbook"
-			);
-    
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
+import net.minecraft.item.Item;
+import net.minecraft.loot.*;
+import net.minecraft.loot.StandaloneLootEntry.Builder;
+import net.minecraft.loot.functions.SetNBT;
+import net.minecraft.nbt.CompoundNBT;
+import net.minecraft.nbt.ListNBT;
+import net.minecraft.nbt.StringNBT;
+import net.minecraft.util.ResourceLocation;
+
+import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.minecraftforge.registries.ForgeRegistries;
+
+
+@Mod("minerlore")
+@Mod.EventBusSubscriber(modid = BookLoot.MOD_ID)
+public class BookLoot
+{
+	public static final String MOD_ID = "minerlore";
+	private static final Logger logger = LogManager.getLogger();
+	public static final RegistryObject<Item> WRITTENBOOK = RegistryObject.of(new ResourceLocation("minecraft:written_book"), ForgeRegistries.ITEMS);
+
+	public BookLoot()
+	{
+		FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
 	
-    @SubscribeEvent
-    public static void onLootTableLoad(final LootTableLoadEvent event)
+		MinecraftForge.EVENT_BUS.register(this);
+	}
+
+    private void setup(final FMLCommonSetupEvent event)
     {
-    	List<LootEntry> entries = new ArrayList<LootEntry>();
-        if(event.getName().equals(LootTableList.CHESTS_IGLOO_CHEST) || 
-        		event.getName().equals(LootTableList.CHESTS_SIMPLE_DUNGEON) || 
-        		event.getName().equals(LootTableList.CHESTS_WOODLAND_MANSION) ||
-        		event.getName().equals(LootTableList.CHESTS_VILLAGE_BLACKSMITH) ||
-        		event.getName().equals(LootTableList.CHESTS_STRONGHOLD_LIBRARY) ||
-        		event.getName().equals(new ResourceLocation("champions:champion_loot")))
+		logger.debug("Miner Lore loaded.");
+    }
+
+	@SubscribeEvent
+    public static void onLootTableLoad(LootTableLoadEvent event)
+    {
+		ResourceLocation name = event.getName();
+        if(name.equals(new ResourceLocation("minecraft:chests/igloo_chest")) || 
+				name.equals(new ResourceLocation("minecraft:chests/simple_dungeon")) || 
+        		name.equals(new ResourceLocation("minecraft:chests/wooldland_mansion"))||
+        		name.equals(new ResourceLocation("minecraft:chests/village_blacksmith")) ||
+        		name.equals(new ResourceLocation("minecraft:chests/stronghold_library")) ||
+        		name.equals(new ResourceLocation("minecraft:chests/stronghold_corridor")) ||
+				name.equals(new ResourceLocation("minecraft:chests/stronghold_crossing")) ||
+				name.equals(new ResourceLocation("minecraft:chests/abandoned_mineshaft")) ||
+				name.equals(new ResourceLocation("champions:champion_loot")))
         {
-	        for (BookData book : book_array)
-	        {
-	        	NBTTagCompound tag = new NBTTagCompound();
-	
-		        tag.setString("author",book.author);
-		        if (book.title == "Questions From a Worker Who Reads")
-		        	tag.setString("title","Questions From a Worker");
-		        else if (book.title == "The Testimony of Patience Kershaw")
-		        	tag.setString("title","Testimony of Patience Kershaw");
-		        else tag.setString("title",book.title);
-	
-		        NBTTagList pages = new NBTTagList();
-		        pages.appendTag(new NBTTagString(String.format("{\"text\":\"%s\"}", book.title+"\n\n"+book.author)));						        	
-		        for (String bookpage : book.pages)
-		        {
-			        pages.appendTag(new NBTTagString(String.format("{\"text\":\"%s\"}", bookpage)));						        	
-		        }
-		        tag.setTag("pages", pages);
+			LootPool.Builder poolBuilder = LootPool.builder();
+			poolBuilder.name("lore");
 
-		        LootEntry entry = new LootEntryItem(Items.WRITTEN_BOOK, 1, 0, new LootFunction[]{new SetNBT(new LootCondition[0],tag)}, new LootCondition[0], "written_book");
-		        entries.add(entry);
-	        }
+			for (BookData book : book_array)
+	        {
+				for (int generation = 0; generation < 4; generation++)
+				{
+					CompoundNBT tag = new CompoundNBT();
+	
+					String title = "title";
+					tag.putString("author",book.author);
+					if (book.title.equals("Questions From a Worker Who Reads") )
+						tag.putString(title,"Questions From a Worker");
+					else if (book.title.equals("The Testimony of Patience Kershaw") )
+						tag.putString(title,"Testimony of Patience Kershaw");
+					else tag.putString(title,book.title);
+					tag.putInt("generation", generation);
+		
+					ListNBT pages = new ListNBT();
+					pages.add(StringNBT.valueOf(String.format("{\"text\":\"%s\"}", book.title+"\n\n"+book.author)));						        	
+					for (String bookpage : book.pages)
+					{
+						pages.add(StringNBT.valueOf(String.format("{\"text\":\"%s\"}", bookpage)));			
+					}
+					tag.put("pages", pages);
+					
+					Builder<?> item = ItemLootEntry.builder(WRITTENBOOK.get());
+					if (generation == 0) item.weight(3);
+					if (generation == 1) item.weight(30);
+					if (generation == 2) item.weight(300);
+					if (generation == 3) item.weight(666);
+					item.quality(0);
+					item.acceptFunction(SetNBT.builder(tag));
+	
+					poolBuilder.addEntry(item);
+				}
+			}
 
-	        if(event.getName().equals(LootTableList.CHESTS_STRONGHOLD_LIBRARY))
+	        if(name.equals(new ResourceLocation("minecraft:chests/stronghold_library")))
 	        {
-    			LootPool pool = new LootPool(entries.toArray(new LootEntry[] {}), new LootCondition[0], new RandomValueRange(8,16), new RandomValueRange(0,1), "bookpool");        
-    	        event.getTable().addPool(pool);
+				poolBuilder.rolls(new RandomValueRange(8,16));
+				poolBuilder.bonusRolls(0,1);
+    	        event.getTable().addPool(poolBuilder.build());
 	        }
-	        else if (event.getName().equals(new ResourceLocation("champions:champion_loot")))
+	        else if (name.equals(new ResourceLocation("champions:champion_loot")))
 	        {
-    			LootPool pool = new LootPool(entries.toArray(new LootEntry[] {}), new LootCondition[0], new RandomValueRange(1), new RandomValueRange(0,1), "bookpool");        
-    	        event.getTable().addPool(pool);	
+				poolBuilder.rolls(new RandomValueRange(1));
+				poolBuilder.bonusRolls(0,1);
+    	        event.getTable().addPool(poolBuilder.build());	
 	        }
 	        else
 	        {
-    			LootPool pool = new LootPool(entries.toArray(new LootEntry[] {}), new LootCondition[0], new RandomValueRange(1), new RandomValueRange(0,1), "bookpool");        
-    	        event.getTable().addPool(pool);	
-	        }
+				poolBuilder.rolls(new RandomValueRange(1));
+				poolBuilder.bonusRolls(0,1);
+				event.getTable().addPool(poolBuilder.build());	
+			}
         }
     
     }
