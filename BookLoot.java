@@ -133,25 +133,22 @@ public class BookLoot
 				};
     		}},
     		new BookData(){{
-				author = "Kate Campbell";
-				title = "Mining Camp Blues";
+				author = "Bertolt Brecht";
+				title = "Evolved Human's";
 				pages = new String[] {
-						"Once i had a daddy\nAnd he worked down in a hole\nOnce i had a daddy\nAnd he worked down in a hole\nDigging and hauling\nHauling that birmingham coal\n",
-						"Many times i wondered\nWhen they took my daddy down\nMany times i wondered\nWhen they took my daddy down\nWill he come back to me\nWill they leave him\nIn the ground",
-						"Something like the pitcher\nThat they sent down in the well\nSomething like the pitcher\nThat they sent down in the well\nWondering will they break it\nLordy lordy who can tell\n",
-						"It was late one evening\nI was standing at that mine\nIt was late one evening\nI was standing at that mine\nForeman said my daddy\nHad gone down\nFor his last last time\n",
-						"Now he was a coalminer\nFrom his hat down to his shoes\nNow he was a coalminer\nFrom his hat down to his shoes\nAnd i\'m nearly dying\nWith these mining camp blues"
+					"Today I encountered an evolved human, and it was a shock to see just how much the NZS virus had changed this infected. The evolved human was taller and leaner than any of the other infected I had encountered before. Its skin was a sickly grey, and it had a strange, feral look in its eyes.",
+					"What struck me most was its strength. The evolved human was easily twice as strong as any other infected I had encountered. It tore through walls and obstacles with ease, and it moved with a grace and speed that was almost supernatural.",
+					"The evolved human didn't seem to have any of the weaknesses of the other infected. It wasn't slowed down by wounds or injuries, and it seemed to be able to see and track me even when I was hidden. It was almost as if it had evolved beyond the limitations of the other infected."
 				};
     		}},
     		new BookData(){{
-				author = "Unknown";
-				title = "Coal Miner's Blues";
+				author = "Bertolt Brecht";
+				title = "Slasher";
 				pages = new String[] {
-						"Some blues are just blues, mine are the miner\\'s blues.\nSome blues are just blues, mine are the miner\\'s blues.\nMy troubles are coming by threes and by twos.",
-						"Blues and more blues, it\\'s that coal black blues.\nBlues and more blues, it\\'s that coal black blues.\nGot coal in my hair, got coal in my shoes",
-						"These blues are so blue, they are the coal black blues.\nThese blues are so blue, they are the coal black blues.\nFor my place will cave in, and my life I will lose.\n",
-						"You say they are blues, these old miner\\'s blues.\nYou say they are blues, these old miner\\'s blues.\nNow I must have sharpened these picks that I use.\n",
-						"I\'m out with these blues, dirty coal black blues.\nI\'m out with these blues, dirty coal black blues.\nWe\'ll lay off tomorrow with the coal miner\'s blues."
+						"I encountered a new type of infected today, and it was one of the most terrifying things I have ever seen. It was a villager, but it had evolved in a way that I couldn't have imagined. I'm calling it a Slasher for now, because of the large sickle that has grown out of its neck.",
+						"The Slasher was fast and deadly. It moved with an agility that I hadn't seen in any of the other infected. And that sickle - it was like nothing I had ever seen before. It was at least a foot long and razor sharp.",
+						"The Slasher moved towards me, and I raised my weapon, ready to defend myself. But it was too fast, and it dodged out of the way of my attack. Then it came at me with that sickle, slashing at me with a speed and precision that was impossible to defend against.",
+						"I managed to dodge out of the way, but I could feel the wind from the sickle as it passed by me. The Slasher continued to attack, moving with a speed and ferocity that I had never seen before."
 				};
     		}},
     		new BookData(){{
@@ -205,13 +202,12 @@ public class BookLoot
 				};
     		}},
     		new BookData(){{
-				author = "Orville J. Jenks";
-				title = "Sprinkle Coal Dust On My Grave";
+				author = "Bertolt Brecht";
+				title = "Spitter";
 				pages = new String[] {
-						"I\'m just an old coal miner\nAnd I labored for my bread;\nThis story in my memory I hear told;\nFor the sake of wife and baby\nHow a miner risks his life\nFor the price of just a little lump of coal.",
-						"Mother Jones is not forgotten\nBy the miners of this field,\nShe\'s gone to rest above, God bless her soul;\nTried to lead the boys to victory.\nBut was punished here in jail,\nFor the price of just a little lump of coal.",
-						"When a man has toiled and labored\n\'Til his life it\'s almost gone,\nThen the operator thinks he\'s just a fool:\nThey sneak around and fire him\nJust because he\'s growing old,\nAnd swear they caught him breaking company rules.",
-						"Don\'t forget me, little darling,\nWhen they lay me down to rest,\nTell my brothers all these loving words I say;\nLet the flowers be forgotten,\nSprinkle coal dust on my grave\nIn remembrance of the UMWA."
+					"I encountered a new type of infected today. It was a villager, but it had evolved in a way that I didn't think was possible. I'm calling it a Spitter for now, because of its ability to shoot a stream of acid from its trunk-like tongue.",
+					"The Spitter was unlike any infected I had seen before. Its jaw was completely disjointed, and it seemed to have no control over the movements of its tongue. It flailed around, lashing out at anything in its path, and then suddenly it shot a stream of acid towards me.",
+					"I managed to dodge out of the way just in time, but I could feel the heat from the acid on my skin. It was like nothing I had ever felt before. The Spitter continued to spit acid, hitting anything and everything in its path."
 				};
     		}},
     		new BookData(){{
@@ -241,58 +237,66 @@ public class BookLoot
 				};
     		}},
     		new BookData(){{
-				author = "Unknown";
-				title = "Only A Miner";
+				author = "Bertolt Brecht";
+				title = "phayrius";
 				pages = new String[] {
-						"The hard-working miners, their dangers are great,\nMany while mining have met their sad fate,\nWhile doing their duties as miners all do\nShut out from the daylight and their darling ones, too.",
-						"He\\'s only a miner been killed in the ground,\nOnly a miner, and one more is found;\nKilled by an accident, no one can tell\nHis mining\\'s all over, poor miner, farewell.",
-						"He leaves his dear wife, and little ones, too\nTo earn them a living as miners all do.\nWhile he was working for those whom he loved\nHe met a sad fate from a boulder above.",
-						"With a heart full of sorrow we bid him farewell,\nHow soon we may follow, there\'s no one can tell.\nGod pity the miners, protect them as well\nAnd shield them from danger while down in the ground."
+					"I saw something today that I can't explain. It was like nothing I've ever seen before. It was a creature, but it looked like a bat...or at least, like something that used to be a bat.",	
+					"I don't know what it's called, but I've decided to call it a Phayrius for now. It was flying through the air, flapping its wings in a way that didn't quite look right. And then, I realized that it wasn't flapping its wings at all - it was gliding through the air with what looked like pure skin stretched between its arms and body.",
+					"I watched in horror as the Phayrius swooped down on a group of wandering villagers. They didn't stand a chance - the Phayrius was fast and agile, and it carried a group of infected with it that ambushed the villagers from behind.",
+					"What scares me the most is that the Phayrius is unlike anything we've seen before. It can fly, which means that we're no longer safe on the ground. And it can carry infected with it, which means that we have to be even more vigilant than before.",
+					"I don't know what to do about the Phayrius, but I do know that we can't let our guard down. It's a reminder that the NZS virus is still evolving, and it's only going to get more dangerous from here on out."
 				};
     		}},
     		new BookData(){{
 				author = "Valerie Smith";
-				title = "In Those Mines";
+				title = "Necrotizing fasciitis";
 				pages = new String[] {
-						"Twenty men saw their maker\\'s face\nTwenty men saw their maker\\'s face\nWhen the old Coeburn mine took their life\\'s breath away\n\nChorus:\nIn those mines\nIn those mines\nIn those cold, dark, dingy, coal-diggin\\' mines",
-						"Momma cried and she held to me\nMy momma cried and she held to me\nShe\\'d lost seven sons and I a husband to be\n\nIn those mines\nIn those mines\nIn those cold, dark, dingy, coal-diggin\\' mines",
-						"That old coal train sings a lonesome song\nThat old coal train sings a lonesome song\nFor the men that it\'s doomed to those days black and long\n\nIn those mines\nIn those mines\nIn those cold, dark, dingy, coal-diggin\' mines",
-						"When I die wontcha throw me down\nWell, when I die wontcha throw me down\nTo be with my lover so deep in the ground\n\nIn those mines\nIn those mines\nIn those cold, dark, dingy, coal-diggin\' mines",
-						"In those mines\nIn those mines\nIn those cold, dark, dingy, coal-diggin\' mines\n\nTwenty men saw their maker\'s face\nTwenty men saw their maker\'s face"
+						"Regarding the evolution of Necrotizing fasciitis, it is believed to have emerged as a result of various bacterial strains evolving to become more virulent and resistant to antibiotics. Some of the common bacteria that cause Necrotizing fasciitis include Streptococcus pyogenes (group A streptococcus), Vibrio vulnificus, and Clostridium perfringens.",
+						"These bacteria can enter the body through breaks in the skin, such as cuts, scrapes, or surgical wounds, and release toxins that damage surrounding tissues. This can lead to the rapid spread of the infection and the destruction of tissue, which can cause severe pain, swelling, fever, and other symptoms.",
+						"While the exact mechanism by which Necrotizing fasciitis evolved is not fully understood, it is believed that environmental factors, such as changes in temperature, humidity, and antibiotic use, may have played a role in the evolution of these bacteria. Additionally, genetic mutations and the acquisition of new genetic material through horizontal gene transfer may have also contributed to the evolution of these bacterial strains.",
+						"In conclusion, Necrotizing fasciitis is a severe bacterial infection that can cause significant harm to the body. However, it is not known to turn dead people into reanimated husks.",
 				};
     		}},
     		new BookData(){{
-				author = "Steve Earle";
-				title = "The Mountain";
+				author = "Sarah Earle";
+				title = "Sarah's diary";
 				pages = new String[] {
-						"I was born on this mountain a long time ago\nBefore they knocked down the timber and strip-mined the coal\nWhen you rose in the mornin\\' before it was light\nTo go down in that dark hole and come back up at nigh",
-						"I was born on this mountain, this mountain\\'s my home\nAnd she holds me and keeps me from worry and woe\nWell, they took everything that she gave, now they\\'re gone\nBut I\\'ll die on this mountain, this mountain\\'s my home",
-						"I was young on this mountain, now I am old\nAnd I knew every holler, every cool swimmin\' hole\nTil one night I lay down and woke up to find\nThat my childhood was over, I went down in the mine.",
-						"There\'s a hole in this mountain, it\'s dark and it\'s deep\nAnd God only knows all the secrets it keeps\nThere\'s a chill in the air only miners can feel\nAnd there\'s ghosts in the tunnels that the company sealed."
+						"Day 1: March 1, 2028: Today marks the beginning of my journey to find other survivors of the outbreak. I've heard rumors of a safe zone on the outskirts of the city, and I am determined to find it. I know it won't be easy, but I have to try.",
+						"Day 3: March 3, 2028: I've been walking for two days now, and I am exhausted. I haven't encountered any infected individuals yet, but I am constantly on guard. I miss my family and my old life, but I have to keep moving forward.",
+						"Day 7: March 7, 2028: I finally found the safe zone, and it's a relief to be among other survivors. The community is small, but we are all working together to build a new life. I've been assigned to the scavenging team, and we go out daily to collect supplies.",
+						"Day 14: March 14, 2028: I've started to develop close friendships with some of the other survivors, and it feels good to have a sense of belonging again. We all share our stories and our struggles, and it helps us to feel less alone in this new world.",
+						"Day 21: March 21, 2028: We encountered a group of infected individuals on our scavenging run today, and it was a close call. One of our team members was bitten, and we had to make the difficult decision to leave them behind. It's a harsh reality, but we have to do whatever it takes to survive.",
+						"Day 28: March 28, 2028: I've started to notice some changes in myself. My hair is falling out, and my skin has become dry and scaly. I am worried that I might be infected, but I am too scared to get tested. I don't know what I would do if I found out I had the virus.",
+						"Day 30: March 30, 2028: I finally mustered up the courage to get tested, and the results came back negative. It's a relief, but I can't help but feel guilty for doubting myself. I know that many others aren't as lucky, and it's a sobering reminder of the fragility of life in this new world."
+						
 				};
     		}},
     		new BookData(){{
-				author = "Shirley Hill";
-				title = "Prayer Of A Miner's Child";
+				author = "Dr.John lee";
+				title = "Necrotizing fasciitisV2 tests";
 				pages = new String[] {
-						"He\\'s just an old coal miner, Lord,\nThat\\'s all he\\'s ever been.\nHe\\'s worked his life away in mines\nWith all the other men",
-						"So keep him safe and be with him\nWhen he goes in that mine;\nAnd also help him stay away\nFrom the unemployment line.",
-						"Stay by his side in all he does,\nHe\'s a-getting tired, you know.\nHis hair is changing color fast,\nAnd his age has began to show.",
-						"I know some day he\'ll leave this earth\nAnd I will stay behind.\nBut when he leaves, I hope it\'s not\nCaused by that old coal mine.",
-						"I want the very best for him,\nI don\'t want him to be sad.\nBecause, dear Lord, I think you know,\nThis coal miner is my dad."
+						"Day 1: March 1, 2023: Today marks the first day of our investigation into the new outbreak of Necrotizing fasciitis V2. We have received several cases of patients with severe soft tissue damage and are currently in the process of analyzing samples to identify the bacterial strain responsible.",
+						"Day 2: March 2, 2023: We have identified the bacterial strain responsible for the outbreak as a new variant of Necrotizing fasciitis. The bacteria appear to be more virulent and resistant to antibiotics than previous strains we have encountered.",
+						"Day 3-6: March 3-6, 2023: We are continuing our investigations into the new strain of Necrotizing fasciitis. Our team is working around the clock to study the bacterial samples and develop new treatment strategies.",
+						"Day 7-9: March 7-9, 2023: The number of patients with Necrotizing fasciitis V2 has increased significantly. We are seeing more severe cases and are struggling to keep up with the demand for treatment.",
+						"Day 10-12: March 10-12, 2023: We have observed some unusual behavior in some of the infected patients. They seem to be exhibiting symptoms of delirium and aggression. We are monitoring this closely and will continue to investigate.",
+						"Day 13: March 13, 2023: The situation is becoming increasingly dire. The number of infected patients has skyrocketed, and our treatment options are becoming limited. We need to find a way to contain the spread of the infection.",
+						"Day 14: March 14, 2023: After extensive research and discussion with my colleagues, I propose that we name the new variant of Necrotizing fasciitis Necrotizing Zombiefication Syndrome (NZS) due to the strange behavior exhibited by some of the infected patients resembling that of zombies.",
+						"Day 22: March 23, 2023: We have been working tirelessly to find a solution to the Necrotizing Zombiefication Syndrome (NZS) outbreak, but we have not made any significant progress. The number of infected patients continues to increase, and our resources are running low.",
+						"Day 23-25: March 24-26, 2023: We have been conducting experiments to test various treatment options for NZS. Unfortunately, none of the treatments we have tried so far have been effective. We are considering more experimental approaches, but we need to ensure their safety before moving forward.",
+						"Day 26-29: March 27-30, 2023: We have noticed a trend in the infected patients. Those who exhibit the aggressive behavior seem to have a higher mortality rate. We are investigating this further to determine if there is a correlation between the behavior and the severity of the infection.",
+						"Day 30-32: March 31-April 2, 2023: We have developed a new treatment protocol that shows some promise. We are cautiously optimistic and will begin testing it on infected patients soon. However, we need to ensure the safety of the treatment before administering it widely."
 				};
     		}},
     		new BookData(){{
 				author = "Bertolt Brecht";
-				title = "Questions From a Worker Who Reads";
+				title = "infected human";
 				pages = new String[] {
-						"Who built Thebes of the seven gates?\nIn the books you will find the names of kings.\nDid the kings haul up the lumps of rock?\nAnd Babylon, many times demolished\nWho raised it up so many times?",
-						"In what houses\nof gold-glittering Lima did the builders live?\nWhere, the evening that the Wall of China was finished\nDid the masons go? Great Rome\nIs full of triumphal arches. Who erected them? Over whom\nDid the Caesars triumph?",
-						"Had Byzantium, much praised in song\nOnly palaces for its inhabitants? Even in fabled Atlantis\nThe night the ocean engulfed it\nThe drowning still bawled for their slaves.",
-						"The young Alexander conquered India.\nWas he alone?\nCaesar beat the Gauls.\nDid he not have even a cook with him?",
-						"Philip of Spain wept when his armada\nWent down. Was he the only one to weep?\nFrederick the Second won the Seven Year\'s War. Who\nElse won it?\n ",
-						"Every page a victory.\nWho cooked the feast for the victors?\nEvery ten years a great man?\nWho paid the bill?",
-						"So many reports.\nSo many questions."
+						"The human infected are those who were once fully human but have been transformed by the NZS virus. At first glance, they may appear to be normal humans, but upon closer inspection, it becomes clear that they have undergone some drastic changes.",
+						"One of the most noticeable changes is the color of their skin. It takes on a sickly shade of gray, almost like the color of ash. Their eyes also change - they become lifeless and devoid of any emotion. It's as if the person who once inhabited the body has been replaced by something else entirely.",
+						"In terms of behavior, the human infected move in strange, jerky motions. It's almost as if they're being controlled by something else, like a puppet on strings. They shuffle along, almost zombie-like, and their movements are often accompanied by strange, guttural noises.",
+						"The human infected are also extremely aggressive. They will attack anyone who gets in their way, and they seem to take pleasure in causing harm to others. They're not very intelligent, however, and can be outsmarted with some clever maneuvering.",
+						"One of the most terrifying things about the human infected is that they were once just like us. They were people with hopes, dreams, and families. Now, they're little more than monsters. It's a harsh reminder of just how fragile our humanity really is."
 				};
     		}},
     		new BookData(){{
@@ -326,34 +330,47 @@ public class BookLoot
 				};
     		}},
     		new BookData(){{
-				author = "Tom Waits";
-				title = "Underground";
+				author = "Dr. Samantha Lee";
+				title = "10 days";
 				pages = new String[] {
-						"Rattle Big Black Bones\nin the Danger zone\nthere\'s a rumblin\' groan\ndown below\nthere\'s a big dark town\nit\'s a place I\'ve found\nthere\'s a world going on\nUNDERGROUND",
-						"they\'re alive, they\'re awake\nwhile the rest of the world is asleep\nbelow the mine shaft roads\nit will all unfold\nthere\'s a world going on\nUNDERGROUND",
-						"all the roots hang down\nswing from town to town\nthey are marching around\ndown under your boots\nall the trucks unload\nbeyond the gopher holes\nthere\'s a world going on\nUNDERGROUND"
+						"Day 1: November 1, 2024: Today marks my 210 day working on the Necrotizing Zombiefication Syndrome outbreak. We have made some progress, but it seems like every time we take a step forward, the virus evolves and becomes more dangerous.",
+						"Day 2: November 2, 2024: Our latest test results show that the virus has mutated again, and the infected individuals are exhibiting even more aggressive behavior than before. It's becoming increasingly dangerous to continue our research.",
+						"Day 3: November 3, 2024: We have been informed that a nearby facility has been breached, and several infected individuals have escaped. This is a major cause for concern, as it could lead to a further spread of the virus.",
+						"Day 4: November 4, 2023: We have been instructed to increase our security measures and to take additional precautions to avoid infection. Our team is feeling the strain, and it's becoming harder to focus on our work.",
+						"Day 5: November 5, 2023: We have received news that a group of infected individuals has breached the quarantine zone and is heading towards our facility. We are currently preparing for a potential breach and are making plans to evacuate if necessary. ",
+						"Day 6: November 6, 2023: The infected group has breached our perimeter, and we are now under attack. We have activated our emergency protocols and are working to contain the situation. It's clear that the virus has evolved and become more dangerous, and we are struggling to keep up.",
+						"Day 7: November 7, 2023: The situation is getting worse by the hour. Our team is exhausted and overwhelmed, and we are facing increasing difficulty in keeping the infected individuals at bay.",
+						"Day 8: November 8, 2023: We have lost contact with several members of our team, and it's unclear if they are alive or dead. We are doing everything we can to maintain our research and protect ourselves, but it's becoming increasingly dangerous to continue.",
+						"Day 9: November 9, 2023: The infected group has breached our inner defenses, and it's clear that we can no longer contain the situation. We have made the difficult decision to abandon our research and evacuate the facility. ",
+						"Day 10: November 10, 2023: As I write this final report, I am on the run from the infected individuals who breached our facility. We have lost everything, including our research, and it's unclear what the future holds. I urge everyone to take this outbreak seriously and to take every precaution to avoid infection. The virus is evolving, and it's more dangerous than ever. We must work together to find a cure and prevent further loss of life."
+				};	
+    		}},
+    		new BookData(){{
+				author = "Dr. Samantha Lee";
+				title = "Report: September 18, 2024";
+				pages = new String[] {
+						"It has been over 200 days since the first cases of Necrotizing Zombiefication Syndrome were reported. The situation has only gotten worse since then, and we are still struggling to find a solution to this deadly outbreak.",
+						"Our team has been working tirelessly to understand the virus and develop a cure, but progress has been slow. Many of our colleagues have fallen ill or died from the infection, including the scientist who wrote the previous report. His sacrifice will not be forgotten, and we will continue his work in his memory.",
+						"We have seen some success in developing a vaccine that can prevent the infection from taking hold, but we are still struggling to produce enough doses to make a significant impact. Additionally, the vaccine is not effective for those who are already infected.",
+						"The infected population continues to grow, and we are facing increasing challenges in containing the spread of the virus. Many regions have been placed under strict quarantine measures, and travel has been severely restricted.",
+						"The infected individuals have become more aggressive and difficult to control, which has made it challenging for medical staff and researchers to work safely. Our team has had to make difficult decisions and sacrifices in order to continue our work.",
+						"In conclusion, the situation remains dire, and we are facing unprecedented challenges in our efforts to control this outbreak. We will continue our work, however, and we remain hopeful that we will find a solution to this devastating disease. We urge everyone to take every precaution to avoid infection and to support those who are working tirelessly to find a cure."
 				};
     		}},
     		new BookData(){{
-				author = "Ruthie Gorton";
-				title = "Voices From the Mountains";
+				author = "Sarah Earle";
+				title = "2033";
 				pages = new String[] {
-						"You\'d better listen to the voices from the mountains,\nTryin\' to tell you what you just might need to know,\n\'Cause the empire\'s days are numbered if you\'re countin\'\nAnd the people just get stronger blow by blow.",
-						"You\'d better listen when they talk about strip mining,\nGonna turn the rollin\' hills to acid clay.\nIf you\'re preachin\' all about that silver lining,\nYou\'ll be talkin\' till the hills are stripped away.",
-						"You\'d better listen to the cries of the dyin\' miners,\nBetter feel the pain of their children and their wives.\nWe gotta stand and fight together for survival,\nAnd it\'s bound to mean a change in all our lives.",
-						"In explosions or from Black Lung they\'ll be dyin\'\nAnd the operator\'s guilty of this crime,\nBut the killin\' won\'t be stopped by all your cryin\'.\nWe gotta fight for what we need, let\'s seize the time.",
-						"You\'d better listen to the voices from the mountains,\nTryin\' to tell you what you need to know,\n\'Cause the empire\'s days are numbered if you\'re countin\'\nAnd the people just get stronger blow by blow."
-				};
-    		}},
-    		new BookData(){{
-				author = "Unknown";
-				title = "What She Aims To Be";
-				pages = new String[] {
-						"Well Jenny\'s husband left her with babies on her knee\nHe\'s long been gone, nobody\'s come to feed the family\nNow miners are making wages in the county she comes from\nThe children do get hungry, Lord, but Jenny\'s back is strong",
-						"She\'s a coal-mining woman and that\'s what she aims to be\nShe breathes that black and dusty air, wears pants upon her knees\nShe\'s proud to be a woman and she\'s working to be free\nShe\'s a coal-mining woman and that\'s what she aims to be",
-						"Robin\'s learned it\'s hard to find a job that satisfies\nA woman\'s need to use the strength that in her body lies\nIt\'s a rough and rocky journey from the kitchen to the mines\nBut strength comes from strugglin\', and Robin\'s doing fine",
-						"She\'s a coal-mining woman and that\'s what she aims to be\nShe breathes that black and dusty air, wears pants upon her knees\nShe\'s proud to be a woman and she\'s working to be free\nShe\'s a coal-mining woman and that\'s what she aims to be",
-						"Life is dark and dangerous down there in those mines\nFear of fire and cave-in are never far behind\nYou could make life easier down in that dangerous hole\nIf you show some respect to those women low and cold"
+						"Day 1: January 1, 2033: My name is Sarah, and I am a survivor of the Necrotizing Zombiefication Syndrome outbreak. It has been ten years since the virus first appeared, and I still can't believe I made it this far. I've seen things I wish I could unsee, but I am still here, and that's something to be grateful for. ",
+						"Day 10: January 10, 2033: I have learned that the older the infected individual, the more mutated they are. It's like the virus has been evolving within them, and they become more dangerous and difficult to kill. It's a terrifying thought, but it's something I have to keep in mind as I navigate this new world.",
+						"Day 20: January 20, 2033: I've been scavenging for supplies with a small group of survivors, and we stumbled upon an old lab. We found some notes left behind by the scientists who were studying the virus. It seems like the virus was engineered in a lab, and it was meant to be a weapon. I can't believe humans could be capable of creating something like this. ",
+						"Day 30: January 30, 2033: We encountered some infected individuals who were different from the ones we've seen before. They were faster, stronger, and their skin had mutated into a hard, scaly texture. We barely made it out alive, and it's clear that the virus is still evolving.",
+						"Day 40: February 9, 2033: I found an abandoned journal from a scientist who was studying the virus during the early days of the outbreak. It's interesting to read about their findings and how they were struggling to understand the virus. It's a reminder that we are all human, and we are all trying to survive.",
+						"Day 50: February 19, 2033: We encountered a group of infected individuals who were elderly, and they were unlike any other infected we've seen before. Their skin had turned black, and their eyes glowed a bright red. They were fast and agile, and it took all of our strength to take them down.",
+						"Day 60: March 1, 2033: I am starting to notice some changes in myself. I've been coughing more, and I feel weaker than before. I don't know if it's just fatigue or if I've been infected with the virus. It's a scary thought, but I am trying not to panic.",
+						"Day 61: March 2, 2033: I woke up with a fever today, and my skin has turned a sickly shade of green. I know what this means - I've been infected with the virus. I am not sure how long I have left, but I am determined to make the most of it.",	
+						"Day 62: March 3, 2033: I am starting to feel the effects of the virus. My skin is turning hard and scaly, and my eyesight is getting worse. I don't know how much longer I can hold on, but I am trying to stay strong.",
+						"Day 63: March 4, 2033: I can feel myself slipping away. The virus has taken hold of my body, and I can't fight it any longer. I hope that whoever finds this journal will remember that we are all human, and we all have the capacity for both good and evil. We must continue to fight for our survival and for the survival of the human race."
 				};
     		}}
     };
